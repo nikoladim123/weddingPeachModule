@@ -1,0 +1,305 @@
+@font-face {
+  font-family: 'Lato-Regular';
+  src:url('../fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'steelfish';
+  src:url('../fonts/steelfish/steelfish-rg.ttf');
+}
+@font-face {
+  font-family: 'Dosis-Bold';
+  font-display: auto;
+  src: url('../fonts/Dosis-Bold.otf') format('truetype');
+}
+
+body{
+  min-height: 101vw;
+  margin: 0;
+}
+
+nav{
+  padding-top: 1.1vw;
+  padding-left: 49.7vw;
+  display: flex;
+  /* border: 1px solid red; */
+  align-items: center;
+  color: #555555;
+}
+
+nav a{
+  color: #555555;
+}
+
+.search{
+  width: 1.3546vw;
+}
+.cardBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 6.7vw;
+  position: relative;
+  top: -0.8vw;
+}
+.cardBox p{
+  font-family: 'Lato-Regular';
+  font-size: 1.0643vw;
+  margin: 0;
+  position: relative;
+  left: 0.1vw;
+  top: 0.2vw;
+  font-weight: 900;
+  color: #f26207;
+}
+
+.myAcc{
+  font-family: 'Lato-Regular';
+  font-size: 0.87082vw;
+  margin-left: 0.45vw;
+  font-weight: 800;
+}
+
+.myAcc:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.number{
+  font-family: 'Lato-Regular';
+  font-size: 1.1611vw;
+  margin-left: 9.7vw;
+  text-decoration: none;
+}
+
+.number:hover{
+  text-decoration: underline;
+}
+
+.card{
+  width: 1.644vw;
+}
+.userIcon{
+  width: 1.2094vw;
+  margin-left: 2.7vw;
+}
+.flagImg{
+  width: 2.8543vw;
+  margin-left: 1.55vw;
+}
+
+/* headerContent */
+.headerContentContainer{
+  display: flex;
+  justify-content: center;
+}
+.headerContentBox{
+  position: relative;
+  width: 83.4059vw;
+  height: 64.34446vw;
+  background: white;
+  box-shadow: 0px 0px 7.111vw -1.55vw rgba(0,0,0,0.12);
+}
+
+.shadowBox{
+  width: 80vw;
+  height: 5vw;
+  position: absolute;
+  top: 63vw;
+  background: red;
+  left: 10vw;
+  /* z-index: 2; */
+  box-shadow: 0px 2.41896vw 2.95113vw -0.8708vw rgba(0,0,0,0.52);
+}
+
+.orangeSide{
+  width: 33.2365vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #f36207;
+}
+
+.logoBox{
+  /* border: 1px solid red; */
+  position: relative;
+  margin-left: 5.8vw;
+  margin-top: 1.05vw;
+}
+
+.logo{
+  width: 10.98209vw;
+}
+.logoHeart{
+  width: 1.7416vw;
+  position: absolute;
+  left: 4.74vw;
+  top: 0.72vw;
+  filter: brightness(1);
+  animation-name: logoHeart;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes logoHeart {
+  0%{
+    filter: brightness(0.99);
+  }
+  100%{
+    filter: brightness(1.25);
+  }
+}
+
+.leftSideContent{
+  position: absolute;
+  width: 59.7vw;
+  height: 44.992vw;
+  background: linear-gradient(45deg, rgba(243,223,147,1) 0%, rgba(242,109,14,1) 100%);
+  left: 5.05vw;
+  top: 14.45vw;
+}
+
+.legs{
+  position: absolute;
+  right: 0;
+  top: -1.05vw;
+  width: 50.7014vw;
+}
+
+.leftTextBox{
+  /* border: 1px solid black; */
+  display: flex;
+  font-family: 'steelfish';
+  color: white;
+}
+
+.leftTextBox p{
+  writing-mode: tb;
+  margin: 0;
+  font-size: 0.7368vw;
+  position: relative;
+  top: 10.5vw;
+  left: 0.77vw;
+  font-family: 'Dosis-Bold';
+}
+
+.leftTextBox h2{
+  margin: 0;
+  writing-mode: tb;
+  font-size: 8.7082vw;
+  font-weight: 100;
+  position: relative;
+  left: 8vw;
+  top: 3vw;
+}
+.leftTextBox h2:hover{
+  cursor: pointer;
+}
+
+.leftTextBox h3{
+  margin: 0;
+  writing-mode: tb;
+  font-size: 2.95113vw;
+  transform: rotate(180deg);
+  position: relative;
+  left: 6.3vw;
+  font-weight: 100;
+  top: -18.6vw;
+}
+.leftTextBox h3:hover{
+  cursor: pointer;
+}
+
+.shopNowButton{
+  transition: all 0.5s ease;
+  font-family: 'Dosis-Bold';
+  width: 14.0783vw;
+  height: 3.0962vw;
+  border-radius: 10vw;
+  color: white;
+  background-color: #f36207;
+  font-size: 1.513vw;
+  position: absolute;
+  bottom: 5.55vw;
+  left: 3.3vw;
+  font-weight: 900;
+  letter-spacing: 0.1vw;
+  border: none;
+  box-shadow: 0px 0px 111px -6px rgba(243,97,7,0.52);
+  filter: brightness(1);
+}
+
+.shopNowButton:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 111px -6px rgba(243,97,7,0.92);
+  filter: brightness(1.1);
+}
+
+.shopNowButton p{
+  margin: 0;
+  /* transform: scale(1.3,1); */
+}
+
+
+.threeImagesRight{
+  /* border: 1px solid red; */
+  position: absolute;
+  right: -3.27vw;
+  top: 3.1vw;
+  width: 17.0295vw;
+  height: 51.2820vw;
+  box-shadow: 0px 0px 7.111vw -1.55vw rgba(0,0,0,0.12);
+}
+
+
+.prodBox{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prodBox img{
+  width: 100%;
+}
+
+
+.latestProductsContainetr{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* border: 1px solid yellow; */
+  overflow: hidden;
+}
+
+.latestProducts{
+  transition: all 1.5s ease;
+  display: flex;
+  align-items: center;
+  transform: rotate(90deg);
+  width: 28vw;
+  position: relative;
+  /* top: 17vw; */
+  top: -12vw;
+  left: 4vw;
+/* margin: 0; */
+}
+
+.latestProducts p{
+  color: #f3cc7d;
+  margin: 0;
+  font-size: 1.45137vw;
+  font-family: 'Lato-Regular';
+  margin-left: 0.4vw;
+}
+
+.latestProductsLine{
+  width: 11.2723vw;
+  height: 2px;
+  background: #f3cc7d;
+}
